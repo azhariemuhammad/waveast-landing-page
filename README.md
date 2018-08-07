@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Starter kit to use Gulp with Less.
 ====================================
 A super clean and easy to use starter kit for using Gulp and Less. This should help you repurpose Gulp and Less for your own projects.
@@ -46,29 +47,5 @@ Should use [Livereload extension](http://livereload.com/extensions/). Or inject 
 When you change a LESS(or JS) file, the page will reload.
 
 ## Updates
+# waveast-landing-page
 
-**If this isn't working**, it's probably because you need to update. Just run `npm update --save-dev`
-
-**If no command gulp found?**, you need to install it globally `npm install -g gulp` or run `npm run gulp`
-
-### Still broken or not working?
-
-Try this:
-
-```javascript
-sudo npm cache clean
-npm install --save-dev
-npm update --save-dev
-gulp
-```
-
-
-## Quick Tips
-- Any changes in `assets/less/*` will trigger the Less to compile on save
-- All files in `assets/js/libs/*`  will be compressed to `build/jquery.plugins.min.js`
-- All files in `assets/js/*` (except for `libs`) will be compressed to `build/scripts.min.js`
-
-
-#### Special Thanks
-
-To Kenny Song for his contributions and https://github.com/baivong
