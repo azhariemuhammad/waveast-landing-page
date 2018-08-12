@@ -73,7 +73,7 @@
                 </a>
             </nav>
             <nav class="wave-nav-right">
-                <ul class="wave-list-none">
+                <ul class="list-none">
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
@@ -89,43 +89,138 @@
         </div>
         <div class="wave-form" style="width: 100%;
         margin-left: 20px;">
-            <form style="max-width: 500px;">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Berangkat</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Ambon">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Tujuan</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ex: Namlea">
-                </div>
-                <div class="option">
-                    <div class="form-group" style="width: 150px;padding-right: 8px;">
-                        <label for="exampleFormControlSelect1">Jumlah Tiket</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group" style="width: 120px;">
-                        <label for="exampleFormControlSelect1">Jenis Tiket</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>VIP</option>
-                            <option>Business</option>
-                            <option>Economy</option>
-                        </select>
-                    </div>
-                </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+
         </div>
     </div>
     <main class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
+                <section class="wave-schedule box card-1">
+
+                    <div class="wave-title">
+                        <h3>Pesan Tiket</h3>
+                        <h6>*Saat ini kami baru bisa melayani rute Ambon - Namlea</h6>
+                    </div>
+                    <div class="wave-logo">
+
+                    </div>
+
+                    <div class="wave-ticket">
+                        <ul class="list-none" style="padding: 10px">
+                            <li class="wave-ticket-list">
+                                <div class="detail">
+                                    <ul class="list-none">
+                                        <li style="width: 140px">
+                                            <div class="kapal">
+                                                <h4>Ferry</h4>
+                                                <h5>Wayangan</h5>
+                                            </div>
+                                        </li>
+                                        <li class="detail-time">
+                                            <div class="berangkat">
+                                                <h4>18:00</h4>
+                                                <h5>Galala</h5>
+                                            </div>
+                                            <div class="berangkat">
+                                                <svg stroke-width="0" width="12" height="12" class="ITxXi" fill="#727272" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24"
+                                                    style="margin-left: 2%; margin-right: 2%; margin-top: 20px">
+                                                    <g>
+                                                        <path d="M18.5857864,13 L12.2928932,19.2928932 C11.9023689,19.6834175 11.9023689,20.3165825 12.2928932,20.7071068 C12.6834175,21.0976311 13.3165825,21.0976311 13.7071068,20.7071068 L21.7071068,12.7071068 C22.0976311,12.3165825 22.0976311,11.6834175 21.7071068,11.2928932 L13.7071068,3.29289322 C13.3165825,2.90236893 12.6834175,2.90236893 12.2928932,3.29289322 C11.9023689,3.68341751 11.9023689,4.31658249 12.2928932,4.70710678 L18.5924509,11 L2.99477117,11 C2.44537422,11 2,11.4438648 2,12 C2,12.5522847 2.45092539,13 2.99477117,13 L18.5857864,13 L18.5857864,13 Z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="berangkat">
+                                                <h4>07:00</h4>
+                                                <h5>Namlea</h5>
+                                            </div>
+                                            <div class="berangkat vertical-line">
+                                            </div>
+                                            <div class="berangkat">
+                                                <h4>4h 12m</h4>
+                                                <h5>direct</h5>
+                                                <div>
+                                                    <form action="">
+                                                        <div class="form-group">
+                                                                <select class="form-control" id="wayangan" onclick="testFn('original-price1', 'wayangan')">
+                                                                <option>Economy</option>
+                                                                <option>Bussines</option>
+                                                                <option>VIP</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="detail-price">
+                                                <h4 id=original-price1>Rp 165.000</h4>
+                                                <div class="additional">
+                                                    <button class="btn btn-light wave-button" onclick="getTicket('wayangan', 'original-price1')">Pilih</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="wave-ticket-list">
+                                <div class="detail">
+                                    <ul class="list-none">
+                                        <li style="width: 140px">
+                                            <div class="kapal">
+                                                <h4>Kapal Cepat</h4>
+                                                <h5>Cantika</h5>
+                                            </div>
+                                        </li>
+                                        <li class="detail-time">
+                                            <div class="berangkat">
+                                                <h4>21:00</h4>
+                                                <h5>Ambon</h5>
+                                            </div>
+                                            <div class="berangkat">
+                                                <svg stroke-width="0" width="12" height="12" class="ITxXi" fill="#727272" stroke="currentColor" stroke-linecap="round" viewBox="0 0 24 24"
+                                                    style="margin-left: 2%; margin-right: 2%; margin-top: 20px">
+                                                    <g>
+                                                        <path d="M18.5857864,13 L12.2928932,19.2928932 C11.9023689,19.6834175 11.9023689,20.3165825 12.2928932,20.7071068 C12.6834175,21.0976311 13.3165825,21.0976311 13.7071068,20.7071068 L21.7071068,12.7071068 C22.0976311,12.3165825 22.0976311,11.6834175 21.7071068,11.2928932 L13.7071068,3.29289322 C13.3165825,2.90236893 12.6834175,2.90236893 12.2928932,3.29289322 C11.9023689,3.68341751 11.9023689,4.31658249 12.2928932,4.70710678 L18.5924509,11 L2.99477117,11 C2.44537422,11 2,11.4438648 2,12 C2,12.5522847 2.45092539,13 2.99477117,13 L18.5857864,13 L18.5857864,13 Z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="berangkat">
+                                                <h4>03:00</h4>
+                                                <h5>Namlea</h5>
+                                            </div>
+                                            <div class="berangkat vertical-line">
+                                            </div>
+                                            <div class="berangkat">
+                                                <h4>4h 12m</h4>
+                                                <h5>direct</h5>
+                                                <div>
+                                                    <form action="">
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="cantika" onclick="testFn('original-price2', 'cantika')">
+                                                                <option>Economy</option>
+                                                                <option>Bussines</option>
+                                                                <option>VIP</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="price">
+                                                <h4 id="original-price2">Rp 165.000</h4>
+                                                <div class="additional">
+                                                    <button class="btn btn-light wave-button" onclick="getTicket('cantika', 'original-price2')">Pilih</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
                 <section class="wave-info">
                     <div class="wave-title">
                         <h2>Cara Pesan Tiket</h2>
@@ -179,8 +274,48 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="build/jquery.plugins.min.js"></script>
     <script src="build/scripts.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"
+    />
+
+    <script>
+        function testFn(priceId, selectedTicket) {
+            const node = document.querySelector(`#${selectedTicket}`).value
+            let price = checkPrice(node);
+            return getPrice(price, priceId)
+        }
+
+        function getPrice(val, id) {
+            const node = document.querySelector(`#${id}`)
+            node.innerHTML = val
+        }
+
+        function checkPrice(node) {
+            let price = 0
+            if (node === "Bussines") {
+                price = "Rp 165.000"
+            } else if (node === "Economy") {
+                price = "Rp 70.000"
+            } else if (node === "VIP") {
+                price = "Rp 250.000"
+            }
+            return price
+        }
+
+        function getTicket(kapal, originalPrice) {
+            let msg = '';
+            let node = document.querySelector(`#${kapal}`).value
+            let price = checkPrice(node)
+            if (kapal === "wayangan") {
+                msg = `Saya ingin memesan tiket: Kapal Ferry Wayangan || Waktu Keberangkatan 20:00, Tiba 04:00 || Harga Tiket ${node} ${price}`
+            } else if (kapal === "cantika") {
+                msg = `Saya ingin memesan tiket: Kapal Cantika || Waktu Keberangkatan 21:00, Tiba 03:00 || Harga Tiket ${node} ${price}`
+            }
+            const whatsappLink =  `https://wa.me/6282239324972?text=${msg}`
+            return window.open(whatsappLink)
+        }
+    </script>
 
 </body>
 
