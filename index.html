@@ -73,11 +73,22 @@
                 </a>
             </nav>
             <nav class="wave-nav-right">
-                <ul class="list-none">
+                <ul class="nav-list list-none">
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
+                <div class="nav-burger">
+                    <a style="font-size: 20px; color: black; cursor:pointer" onclick="openNav()">
+                        &#9776;
+                    </a>
+                </div>
             </nav>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
         </div>
     </header>
     <div class="wave-banner">
@@ -142,7 +153,7 @@
                                                 <div>
                                                     <form action="">
                                                         <div class="form-group">
-                                                                <select class="form-control" id="wayangan" onclick="testFn('original-price1', 'wayangan')">
+                                                            <select class="form-control" id="wayangan" onclick="testFn('original-price1', 'wayangan')">
                                                                 <option>Economy</option>
                                                                 <option>Bussines</option>
                                                                 <option>VIP</option>
@@ -308,12 +319,22 @@
             let node = document.querySelector(`#${kapal}`).value
             let price = checkPrice(node)
             if (kapal === "wayangan") {
-                msg = `Saya ingin memesan tiket: Kapal Ferry Wayangan || Waktu Keberangkatan 20:00, Tiba 04:00 || Harga Tiket ${node} ${price}`
+                msg =
+                    `Saya ingin memesan tiket: Kapal Ferry Wayangan || Waktu Keberangkatan 20:00, Tiba 04:00 || Harga Tiket ${node} ${price}`
             } else if (kapal === "cantika") {
-                msg = `Saya ingin memesan tiket: Kapal Cantika || Waktu Keberangkatan 21:00, Tiba 03:00 || Harga Tiket ${node} ${price}`
+                msg =
+                    `Saya ingin memesan tiket: Kapal Cantika || Waktu Keberangkatan 21:00, Tiba 03:00 || Harga Tiket ${node} ${price}`
             }
-            const whatsappLink =  `https://wa.me/6282239324972?text=${msg}`
+            const whatsappLink = `https://wa.me/6282239324972?text=${msg}`
             return window.open(whatsappLink)
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 
