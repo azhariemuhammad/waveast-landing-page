@@ -23,6 +23,9 @@
     color: #434343;
     height: 162px;
   }
+  &-info {
+    height: 100%;
+  }
 }
 
 .detail {
@@ -31,6 +34,10 @@
     > li {
       padding: 20px;
     }
+  }
+
+  &-kapal {
+    width: 148px;
   }
 
   &-time {
@@ -55,9 +62,8 @@
 
 .box {
   width: 100%;
-  height: 600px;
+  height: 100%;
   background: #fff;
-  margin: 40px auto;
   border-radius: 2px;
 }
 
@@ -79,12 +85,61 @@
 }
 .additional {
   > button:hover {
-    background: #348AA7;
+    background: #003054;
     color: #ffff;
   }
 }
 
-
 .vertical-line {
-  border-left: 1px solid #D3D3D3;
+  border-left: 1px solid #d3d3d3;
+}
+
+@media only screen and (max-width: 600px) {
+  .wave-ticket-list {
+    height: 300px;
+  }
+  .detail {
+    > ul {
+      padding: 0;
+      flex-direction: column;
+      > li {
+        width: 100%;
+        display: flex;
+      }
+    }
+  }
+
+  .detail-kapal {
+    width: 100%;
+  }
+  .detail-time {
+    padding: 0 !important;
+  }
+  .kapal {
+    margin-right: 16px;
+  }
+  .ticket-selector {
+    margin: 0 auto;
+    padding: 0px;
+    width: 125px;
+  }
+
+  .col-md-10 {
+    padding: 0;
+  }
+
+  #main-box {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  figure {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .wave-flow-order {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

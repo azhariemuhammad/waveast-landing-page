@@ -107,7 +107,7 @@
     <main class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <section class="wave-schedule box card-1">
+                <section id="main-box" class="wave-schedule box card-1">
 
                     <div class="wave-title">
                         <h3>Pesan Tiket</h3>
@@ -122,10 +122,21 @@
                             <li class="wave-ticket-list">
                                 <div class="detail">
                                     <ul class="list-none">
-                                        <li style="width: 140px">
+                                        <li class="detail-kapal">
                                             <div class="kapal">
                                                 <h4>Ferry</h4>
                                                 <h5>Wayangan</h5>
+                                            </div>
+                                            <div class="ticket-selector">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="wayangan" onclick="testFn('original-price1', 'wayangan')">
+                                                            <option>Economy</option>
+                                                            <option>Bussines</option>
+                                                            <option>VIP</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </li>
                                         <li class="detail-time">
@@ -150,17 +161,6 @@
                                             <div class="berangkat">
                                                 <h4>4h 12m</h4>
                                                 <h5>direct</h5>
-                                                <div>
-                                                    <form action="">
-                                                        <div class="form-group">
-                                                            <select class="form-control" id="wayangan" onclick="testFn('original-price1', 'wayangan')">
-                                                                <option>Economy</option>
-                                                                <option>Bussines</option>
-                                                                <option>VIP</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </div>
                                             </div>
                                         </li>
                                         <li>
@@ -177,10 +177,21 @@
                             <li class="wave-ticket-list">
                                 <div class="detail">
                                     <ul class="list-none">
-                                        <li style="width: 140px">
+                                        <li class="detail-kapal">
                                             <div class="kapal">
                                                 <h4>Kapal Cepat</h4>
                                                 <h5>Cantika</h5>
+                                            </div>
+                                            <div class="ticket-selector">
+                                                <form action="">
+                                                    <div class="form-group">
+                                                        <select class="form-control" id="cantika" onclick="testFn('original-price2', 'cantika')">
+                                                            <option>Economy</option>
+                                                            <option>Bussines</option>
+                                                            <option>VIP</option>
+                                                        </select>
+                                                    </div>
+                                                </form>
                                             </div>
                                         </li>
                                         <li class="detail-time">
@@ -205,17 +216,6 @@
                                             <div class="berangkat">
                                                 <h4>4h 12m</h4>
                                                 <h5>direct</h5>
-                                                <div>
-                                                    <form action="">
-                                                        <div class="form-group">
-                                                            <select class="form-control" id="cantika" onclick="testFn('original-price2', 'cantika')">
-                                                                <option>Economy</option>
-                                                                <option>Bussines</option>
-                                                                <option>VIP</option>
-                                                            </select>
-                                                        </div>
-                                                    </form>
-                                                </div>
                                             </div>
                                         </li>
                                         <li>
@@ -282,6 +282,53 @@
             </div>
         </div>
     </main>
+    <footer class="primary-footer wave">
+        <div class="container">
+            <div class="col-lg-4 wave-footer-about">
+                <h3>About</h3>
+            </div>
+            <div class="col-lg-4 wave-footer-social">
+
+                <ul class="list-none social-icons">
+                    <li id="facebook">
+                        <a href="">
+                            <figure>
+                                <picture>
+                                    <img src="./assets/image/social-icons/facebook.svg" alt="">
+                                </picture>
+                            </figure>
+                        </a>
+
+                    </li>
+                    <li id="twitter">
+                        <a href="">
+                            <figure>
+                                <picture>
+                                    <img src="./assets/image/social-icons/twitter.svg" alt="">
+                                </picture>
+                            </figure>
+                        </a>
+
+                    </li>
+                    <li id="instagram">
+                        <a href="">
+                            <figure>
+                                <picture>
+                                    <img src="./assets/image/social-icons/instagram.svg" alt="">
+                                </picture>
+                            </figure>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 wave-footer-info">
+                <h3>Info</h3>
+            </div>
+        </div>
+
+    </footer>
+
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -325,7 +372,7 @@
                 msg =
                     `Saya ingin memesan tiket: Kapal Cantika || Waktu Keberangkatan 21:00, Tiba 03:00 || Harga Tiket ${node} ${price}`
             }
-            const whatsappLink = `https://wa.me/6282239324972?text=${msg}`
+            const whatsappLink = `https://wa.me/6282248467118?text=${msg}`
             return window.open(whatsappLink)
         }
 
