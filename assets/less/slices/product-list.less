@@ -22,13 +22,6 @@
     margin: 0 auto 10px;
     color: #434343;
     height: 162px;
-
-    .detail-price {
-      > h4 {
-        font-size: 20px;
-        color: #fa6d01;
-      }
-    }
   }
   &-info {
     height: 100%;
@@ -46,6 +39,9 @@
   &-kapal {
     width: 148px;
   }
+  .kapal {
+    margin-bottom: 16px;
+  }
 
   &-time {
     display: flex;
@@ -54,6 +50,12 @@
     justify-content: space-around;
     .berangkat {
       padding-left: 8px;
+    }
+  }
+  &-price {
+    > h4 {
+      font-size: 18px;
+      color: #fa6d01;
     }
   }
 }
@@ -151,5 +153,10 @@
     .box {
       margin-bottom: 20px;
     }
+  }
+
+  .additional {
+    width: 300px;
+    padding: 8px;
   }
 }
