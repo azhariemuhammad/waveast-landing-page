@@ -59,7 +59,13 @@
     <meta itemprop="image" content="">
 
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,600i|Playfair+Display" rel="stylesheet">
+    <link rel="preload" href="build/style.css" as="style">
+    <link rel="preload" href="build/scripts.min.js" as="script">
+    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css?family=Muli:400,600i|Playfair+Display"
+        rel="stylesheet">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600i|Playfair+Display">
+    </noscript>
     <link rel="stylesheet" href="build/style.css">
 
 </head>
@@ -74,9 +80,15 @@
             </nav>
             <nav class="wave-nav-right">
                 <ul class="nav-list list-none">
-                    <li> <a href="#" class="link">About</a></li>
-                    <li> <a href="#" id="how-to">How To Book</a></li>
-                    <li> <a href="#" class="link">Contact Us</a></li>
+                    <li>
+                        <a href="#" class="link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" id="how-to">How To Book</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">Contact Us</a>
+                    </li>
                 </ul>
                 <div class="nav-burger">
                     <a style="font-size: 20px; color: black; cursor:pointer" onclick="openNav()">
@@ -102,10 +114,18 @@
         </div>
         <div class="wave-form">
             <ul class="list-none">
-                <li class="card box-slogan"><h4>Pesan tiket lewat Whatsapp</h4></li>
-                <li class="card box-slogan"><h4>Tidak perlu antri di loket</h4></li>
-                <li class="card box-slogan"><h4>Tiket diantar ke rumah anda</h4></li>
-                <li class="card box-slogan"><h4>Cuma Rp 5000 Admin Fee</h4></li>
+                <li class="card box-slogan">
+                    <h4>Pesan tiket lewat Whatsapp</h4>
+                </li>
+                <li class="card box-slogan">
+                    <h4>Tidak perlu antri di loket</h4>
+                </li>
+                <li class="card box-slogan">
+                    <h4>Tiket diantar ke rumah anda</h4>
+                </li>
+                <li class="card box-slogan">
+                    <h4>Cuma Rp 5000 Admin Fee</h4>
+                </li>
             </ul>
 
         </div>
