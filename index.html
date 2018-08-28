@@ -28,34 +28,34 @@
     <link rel="apple-touch-icon" sizes="152x152" href="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-152.png"> -->
     <meta name="application-name" content="waveast">
     <!-- <meta name="msapplication-TileImage" content="https://scotch.io/wp-content/themes/thirty/img/icons/favicon-144.png"> -->
-    <meta name="msapplication-TileColor" content="#2A2A2A">
+    <meta name="msapplication-TileColor" content="#003054">
 
     <!-- SEARCH -->
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <link rel="canonical" href="">
+    <meta name="author" content="waveast.com">
+    <meta name="description" content="Booking Tiket Kapal Ferry Dan Kapal Cepat Secara Online">
+    <link rel="canonical" href="http://waveast.surge.sh">
 
     <!-- TWITTER -->
     <meta name="twitter:card" content="">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:site" content="waveast.com">
+    <meta name="twitter:creator" content="waveast.com">
+    <meta name="twitter:title" content="Booking Tiket Kapal Ferry Dan Kapal Cepat Secara Online">
+    <meta name="twitter:description" content="Sekarang kamu bisa booking tiket kapal secara online untuk berpergian ke seluruh Maluku">
     <meta name="twitter:image:src" content="">
 
     <!-- FACEBOOK -->
-    <meta property="og:site_name" content="">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:site_name" content="waveast.com">
+    <meta property="og:url" content="http://waveast.surge.sh">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Booking Tiket Kapal Ferry Dan Kapal Cepat Secara Online">
+    <meta property="og:description" content="Sekarang kamu bisa booking tiket kapal secara online untuk berpergian ke seluruh Maluku">
     <meta property="og:image" content="">
     <meta property="fb:app_id" content="">
     <meta property="fb:admins" content="">
 
     <!-- G+ -->
-    <meta itemprop="name" content="">
-    <meta itemprop="description" content="">
+    <meta itemprop="name" content="Booking Tiket Kapal Ferry Dan Kapal Cepat Secara Online">
+    <meta itemprop="description" content="Sekarang kamu bisa booking tiket kapal secara online untuk berpergian ke seluruh Maluku">
     <meta itemprop="image" content="">
 
     <!-- CSS -->
@@ -102,7 +102,7 @@
         </div>
         <div class="wave-form">
             <ul class="list-none">
-                <li class="card box-slogan"><h4>Booking ticket via Whatsapp</h4></li>
+                <li class="card box-slogan"><h4>Pesan tiket lewat Whatsapp</h4></li>
                 <li class="card box-slogan"><h4>Tidak perlu antri di loket</h4></li>
                 <li class="card box-slogan"><h4>Tiket diantar ke rumah anda</h4></li>
                 <li class="card box-slogan"><h4>Cuma Rp 5000 Admin Fee</h4></li>
@@ -361,8 +361,10 @@
         }
 
         function getPrice(val, id) {
-            const node = document.querySelector(`#${id}`)
-            node.innerHTML = val
+            const oldNode = document.querySelector(`#${id}`)
+            var newNode = oldNode.cloneNode(false)
+            newNode.innerHTML = val
+            oldNode.parentNode.replaceChild(newNode, oldNode)
         }
 
         function checkPrice(node) {
